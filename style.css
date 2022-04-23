@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.container{
+    max-width: 400px;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+}
+tr td{
+    padding: 15px 20px;
+    background-color:#333;
+}
+tr td:hover{
+    background-color:#111;
+}
+.resultado{
+    text-align: right;
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <table>
+            <tr>
+                <td colspan="4" class="title">Calculadora</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="resultado">&nbsp</td>
+            </tr>
+            <tr>
+                <td class="botaoC" onclick="clean()">C</td>
+                <td onclick="reduzir()"><</td>
+                <td class="botao" onclick="clickButton('/')">/</td>
+                <td class="botaoX" onclick="clickButton('X')">X</td>
+            </tr>
+            <tr>
+                <td class="botao7" onclick="clickButton(7)">7</td>
+                <td class="botao8" onclick="clickButton(8)">8</td>
+                <td class="botao9" onclick="clickButton(9)">9</td>
+                <td class="botao-" onclick="clickButton('-')">-</td>
+            </tr>
+            <tr>
+                <td class="botao4" onclick="clickButton(4)">4</td>
+                <td class="botao5" onclick="clickButton(5)">5</td>
+                <td class="botao6" onclick="clickButton(6)">6</td>
+                <td class="botao+" onclick="clickButton('+')">+</td>
+            </tr>
+            <tr>
+                <td class="botao1" onclick="clickButton(1)">1</td>
+                <td class="botao2" onclick="clickButton(2)">2</td>
+                <td class="botao3" onclick="clickButton(3)">3</td>
+                <td rowspan="2" onclick="calcular()">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="botao0" onclick="clickButton(0)">0</td>
+                <td onclick="clickButton('.')">.</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
