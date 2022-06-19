@@ -2,8 +2,8 @@ const result = document.querySelector('.resultado');
 //const botao = document.querySelector('.botao');
 
 
-function clickButton(x){
-    result.innerHTML += x;
+function clickButton(valor){
+    result.innerHTML += valor;
 }
 
 function clean() {
@@ -11,11 +11,14 @@ function clean() {
 }
 
 function reduzir() {
-    result.innerHTML = result.substring(1, result.length - 1);
+    if(result.textContent){
+        let resultado = document.querySelector('.resultado').innerHTML;
+        result.innerHTML = resultado.substring(0, resultado.length -1);
+    }
 }
 
 function calcular() {
-    if(result){
-        result.innerHTML = eval(result);
+    if(result.textContent != 'Erro'){
+        document.querySelector('.resultado').innerHTML = eval(result.innerHTML)
     }
 }
